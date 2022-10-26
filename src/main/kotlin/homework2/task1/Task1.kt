@@ -8,10 +8,10 @@ fun main() {
     val input = Scanner(System.`in`)
     var inputText = input.next().trim()
     try {
-        if(inputText.toLong() < 0 || !(inputText.toInt() in 100..999)){
+        if(inputText.toLong() < 0 || inputText.toInt() !in 100..999){
             println("Попробуйте ещё раз. Введите натуральное трехзначное число")
             inputText = input.next().trim()
-            if (inputText.toLong() < 0 || !(inputText.toInt() in 100..999)) {
+            if (inputText.toLong() < 0 || inputText.toInt() !in 100..999) {
                 println("Всё пропало!")
                 return
             }
