@@ -1,4 +1,4 @@
-package homwork6.task1
+package homework6.task1
 
 import java.util.*
 

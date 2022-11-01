@@ -1,4 +1,4 @@
-package homwork6.task3
+package homework6.task3
 
 /*
 * На вход подается массив чисел, содержащий минимум одно число.
