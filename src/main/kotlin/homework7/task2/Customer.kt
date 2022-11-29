@@ -1,14 +1,11 @@
 package homework7.task2
 
-open class Customer(
+class Customer(
     /* имя */
-    val name: String
+    val name: String,
+    var address: String = ""
 ) {
-    open var address: String? = ""
-    val orders: List<Order> = emptyList()
-    constructor(name: String, address: String?): this(name) {
-        this.address = address
-    }
+    val orders: List<Order> = mutableListOf()
     fun calcPrice(): Int{
         return 0
     }

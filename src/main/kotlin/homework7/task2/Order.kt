@@ -4,16 +4,16 @@ import java.util.Date
 
 class Order(
     /* покупатель */
-    customer: Customer,
+    val customer: Customer,
     /* детали заказа */
-    details: OrderDetails,
+    val details: OrderDetails,
     /* опциональная оплата */
-    payment: Payment?
+    val payment: Payment?
 ) {
     /* дата оформления */
     lateinit var date: Date
     /* текущий статус */
-    lateinit var status: OrderStatus
+    var status: OrderStatus = OrderStatus.WAITING
 
     enum class OrderStatus{
         /* отправлен, ждет оплаты, оплачен, обрабатывается, получен */

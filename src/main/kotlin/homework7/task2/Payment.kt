@@ -8,6 +8,6 @@ open class Payment(
     val currency: Currency
 ) {
     /* статус платежа */
-    var status: PaymentStatus? = null
+    var status: PaymentStatus? = PaymentStatus.NOT_PAID
     open fun performPayment(): Unit {}
 }
