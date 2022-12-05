@@ -1,6 +1,6 @@
 package homework8.task1
 
-open class Employee(surname: String, name: String, val position: String) : Man(surname, name){
+class Employee(surname: String, name: String, val position: String) : Man(surname, name){
     val pastPosition: Set<PastPosition> = mutableSetOf()
     var department : Department? = null
     var idCard: IdCard? = null
